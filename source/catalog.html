@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <a class="page-header__logo" href="index.html"><img class="page-header__logo-image" src="http://placehold.it/150x100" alt="логотип Мишка"></a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle">
+          <span class="visually-hidden">Открыть навигацию</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">Каталог товаров</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="#">Вязание на заказ</a>
+            </li>
+          </ul>
+          <ul class="main-nav__list user-list">
+            <li class="user-list__item">
+              <a class="user-list__link" href="#">Поиск по сайту</a>
+            </li>
+            <li class="user-list__item">
+              <a class="user-list__link" href="#">Корзина</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="inner-page">
+      <h1 class="inner-page__title">Каталог товаров</h1>
+      <ul class="inner-page__catalog photo">
+        <li class="photo__item">
+          <img class="photo__image" src="http://placehold.it/150x100">
+          <h2 class="photo__name">Зайчик-попрыгайчик</h2>
+          <p class="photo-description">Рост 30 см, вес 200 г</p>
+          <p class="photo-price">1 200 руб.</p>
+          <button class="photo-button" type="submit"><span class="visually-hidden">Добавить в корзину</span></button>
+        </li>
+        <li class="photo__item">
+          <img class="photo__image" src="http://placehold.it/150x100">
+          <h2 class="photo__name">Корзинка для белья</h2>
+          <p class="photo-description">Диаметр 15 см, высота 10 см</p>
+          <p class="photo-price">690 руб.</p>
+          <button class="photo-button" type="submit"><span class="visually-hidden">Добавить в корзину</span></button>
+        </li>
+        <li class="photo__item">
+          <img class="photo__image" src="http://placehold.it/150x100">
+          <h2 class="photo__name">Большая корзинка для игрушек</h2>
+          <p class="photo-description">Диаметр 30 см, высота 30 см</p>
+          <p class="photo-price">1 500 руб.</p>
+          <button class="photo-button" type="submit"><span class="visually-hidden">Добавить в корзину</span></button>
+        </li>
+      </ul>
+      <form class="inner-page__modal modal-order" method="POST" action="https://echo.htmlacademy.ru">
+        <h3 class="modal-order__title">Добавить в корзину</h3>
+          <p class="modal-oder__text">Выберите размер:</p>
+          <ul class="modal-order__list">
+            <li class="modal-order__item">
+              <input class="modal-order__input" type="radio" name="size" id="size-s">
+              <label class="modal-order__option" for="size-s">S</label>
+            </li>
+            <li class="modal-order__item">
+              <input class="modal-order__input" type="radio" name="size" id="size-m">
+              <label class="modal-order__option" for="size-m">M</label>
+            </li>
+            <li class="modal-order__item">
+              <input class="modal-order__input" type="radio" name="size" id="size-l">
+              <label class="modal-order__option" for="size-l">L</label>
+            </li>
+          </ul>
+          <button class="button modal-order__button" type="submit">Добавить</button>
+      </form>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="#">
+              <span class="visually-hidden">Иконка инстаграм</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="#">
+              <span class="visually-hidden">Иконка фэйсбука</span>
+            </a></li>
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="#">
+              <span class="visually-hidden">Иконка твитера</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text">Разработано</b>
+        <a class="copyright__logo" href="#">
+          <img class="copyright__image" src="https://htmlacademy.ru/intensive/adaptive" width="27" height="34" alt="иконка HTML Academy"></a>
+      </div>
+    </footer>
+  </body>
+</html>
