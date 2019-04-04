@@ -6,11 +6,11 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo" href="index.html"><img class="page-header__logo-image" src="http://placehold.it/150x100" alt="логотип Мишка"></a>
+      <a class="page-header__logo" href="index.html" aria-label="Переход на главную страницу сайта Мишка">
+        <img class="page-header__logo-image" src="http://placehold.it/150x100" alt="логотип Мишка">
+      </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle">
-          <span class="visually-hidden">Открыть навигацию</span>
-        </button>
+        <button class="main-nav__toggle" aria-label="Открыть навигацию"></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
@@ -33,29 +33,23 @@
     </header>
     <main></main>
     <footer class="page-footer">
-      <div class="page-footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--instagram" href="#">
-              <span class="visually-hidden">Иконка инстаграм</span>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="#">
-              <span class="visually-hidden">Иконка фэйсбука</span>
-            </a></li>
-          <li class="social__item">
-            <a class="social__link social__link--twitter" href="#">
-              <span class="visually-hidden">Иконка твитера</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="page-footer__copyright copyright">
-        <b class="copyright__text">Разработано</b>
-        <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="copyright__image" src="http://placehold.it/150x100" alt="иконка HTML Academy"></a>
-      </div>
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link social__link--instagram" href="#" aria-label="Переход на страницу Мишки в инстаграме"></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href="#" aria-label="Переход на страницу Мишки в фэйсбуке"></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--twitter" href="#" aria-label="Переход на страницу Мишки в твитере"></a>
+        </li>
+      </ul>
+      <p class="page-footer__copyright copyright">
+        <span class="copyright__text">Разработано</b>
+        <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Переход на страницу разработчика HTML Academy">
+          <img class="copyright__logo-image" src="http://placehold.it/150x100" alt="иконка HTML Academy">
+        </a>
+      </p>
     </footer>
   </body>
 </html>

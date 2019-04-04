@@ -6,11 +6,11 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo" href="index.html"><img class="page-header__logo-image" src="http://placehold.it/150x100" alt="логотип Мишка"></a>
+      <a class="page-header__logo" href="index.html" aria-label="Переход на главную страницу сайта Мишка">
+        <img class="page-header__logo-image" src="http://placehold.it/150x100" alt="логотип Мишка">
+      </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle">
-          <span class="visually-hidden">Открыть навигацию</span>
-        </button>
+        <button class="main-nav__toggle" aria-label="Открыть навигацию"></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
@@ -32,74 +32,80 @@
       </nav>
     </header>
     <main class="inner-page">
-      <h1 class="inner-page__title">Каталог товаров</h1>
-      <ul class="inner-page__catalog photo">
-        <li class="photo__item">
-          <img class="photo__image" src="http://placehold.it/150x100">
-          <h2 class="photo__name">Зайчик-попрыгайчик</h2>
-          <p class="photo-description">Рост 30 см, вес 200 г</p>
-          <p class="photo-price">1 200 руб.</p>
-          <button class="photo-button" type="submit"><span class="visually-hidden">Добавить в корзину</span></button>
-        </li>
-        <li class="photo__item">
-          <img class="photo__image" src="http://placehold.it/150x100">
-          <h2 class="photo__name">Корзинка для белья</h2>
-          <p class="photo-description">Диаметр 15 см, высота 10 см</p>
-          <p class="photo-price">690 руб.</p>
-          <button class="photo-button" type="submit"><span class="visually-hidden">Добавить в корзину</span></button>
-        </li>
-        <li class="photo__item">
-          <img class="photo__image" src="http://placehold.it/150x100">
-          <h2 class="photo__name">Большая корзинка для игрушек</h2>
-          <p class="photo-description">Диаметр 30 см, высота 30 см</p>
-          <p class="photo-price">1 500 руб.</p>
-          <button class="photo-button" type="submit"><span class="visually-hidden">Добавить в корзину</span></button>
-        </li>
-      </ul>
-      <form class="inner-page__modal modal-order" method="POST" action="https://echo.htmlacademy.ru">
-        <h3 class="modal-order__title">Добавить в корзину</h3>
-          <p class="modal-oder__text">Выберите размер:</p>
-          <ul class="modal-order__list">
-            <li class="modal-order__item">
-              <input class="modal-order__input" type="radio" name="size" id="size-s">
-              <label class="modal-order__option" for="size-s">S</label>
-            </li>
-            <li class="modal-order__item">
-              <input class="modal-order__input" type="radio" name="size" id="size-m">
-              <label class="modal-order__option" for="size-m">M</label>
-            </li>
-            <li class="modal-order__item">
-              <input class="modal-order__input" type="radio" name="size" id="size-l">
-              <label class="modal-order__option" for="size-l">L</label>
-            </li>
-          </ul>
-          <button class="button modal-order__button" type="submit">Добавить</button>
-      </form>
-    </main>
-    <footer class="page-footer">
-      <div class="page-footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--instagram" href="#">
-              <span class="visually-hidden">Иконка инстаграм</span>
+      <section class="introduction">
+        <h1 class="introduction__title">Каталог товаров</h1>
+      </section>
+      <section class="catalog">
+        <ul class="catalog__list">
+          <li class="catalog__item card">
+            <a class="card__link" href="#" aria-label="Переход на страницу с подробным описания товара Зайчик-попрыгайчик">
+              <img class="card__image" src="http://placehold.it/150x100" alt="Фотография Зайчика-попрыгайчика">
             </a>
+            <a class="card__title" href="#" aria-label="Переход на страницу с подробным описания товара Зайчик-попрыгайчик">Зайчик-попрыгайчик</a>
+            <p class="card__description">Рост 30 см, вес 200 г</p>
+            <p class="card__price">1 200 руб.</p>
+            <button class="card__button" type="button" aria-label="Добавить в корзину"></button>
           </li>
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="#">
-              <span class="visually-hidden">Иконка фэйсбука</span>
-            </a></li>
-          <li class="social__item">
-            <a class="social__link social__link--twitter" href="#">
-              <span class="visually-hidden">Иконка твитера</span>
+          <li class="catalog__item card">
+            <a class="card__link" href="#" aria-label="Переход на страницу с подробным описания товара Корзинка для белья">
+              <img class="card__image" src="http://placehold.it/150x100" alt="фотография Корзины для белья">
             </a>
+            <a class="card__title" href="#" aria-label="Переход на страницу с подробным описания товара Корзинка для белья">Корзинка для белья</a>
+            <p class="card__description">Диаметр 15 см, высота 10 см</p>
+            <p class="card__price">690 руб.</p>
+            <button class="card__button" type="button" aria-label="Добавить в корзину"></button>
+          </li>
+          <li class="catalog__item card">
+            <a class="card__link" href="#" aria-label="Переход на страницу с подробным описания товара Большая корзина для игрушек">
+              <img class="card__image" src="http://placehold.it/150x100" alt="фотография Большой корзины для игрушек">
+            </a>
+            <a class="card__title" href="#" aria-label="Переход на страницу с подробным описания товара Большая корзина для игрушек">Большая корзинка для игрушек</a>
+            <p class="card__description">Диаметр 30 см, высота 30 см</p>
+            <p class="card__price">1 500 руб.</p>
+            <button class="card__button" type="button" aria-label="Добавить в корзину"></button>
           </li>
         </ul>
-      </div>
-      <div class="page-footer__copyright copyright">
-        <b class="copyright__text">Разработано</b>
-        <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="copyright__image" src="http://placehold.it/150x100" alt="иконка HTML Academy"></a>
-      </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <ul class="social__list">
+        <li class="social__item">
+          <a class="social__link social__link--instagram" href="#" aria-label="Переход на страницу Мишки в инстаграме"></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href="#" aria-label="Переход на страницу Мишки в фэйсбуке"></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--twitter" href="#" aria-label="Переход на страницу Мишки в твитере"></a>
+        </li>
+      </ul>
+      <p class="page-footer__copyright copyright">
+        <span class="copyright__text">Разработано</b>
+        <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Переход на страницу разработчика HTML Academy">
+          <img class="copyright__logo-image" src="http://placehold.it/150x100" alt="иконка HTML Academy">
+        </a>
+      </p>
     </footer>
+    <section class="modal-form">
+      <form class="modal modal--cart" method="POST" action="https://echo.htmlacademy.ru">
+        <h3 class="modal__title--cart">Добавить в корзину</h3>
+        <p class="modal__text--cart">Выберите размер:</p>
+        <ul class="modal__list--cart">
+          <li class="modal__item--cart">
+            <input class="modal__input--cart" type="radio" name="size" id="size-s" value="s">
+            <label class="modal__option--cart" for="size-s">s</label>
+          </li>
+          <li class="modal__item--cart">
+            <input class="modal__input--cart" type="radio" name="size" id="size-m" value="m">
+            <label class="modal__option--cart" for="size-m">m</label>
+          </li>
+          <li class="modal__item--cart">
+            <input class="modal__input--cart" type="radio" name="size" id="size-l" value="l">
+            <label class="modal__option--cart" for="size-l">l</label>
+          </li>
+        </ul>
+        <button class="button modal__button-card" type="submit">Добавить</button>
+      </form>
+    </section>
   </body>
 </html>
