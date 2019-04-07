@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Каталог</title>
+    <title>Каталог | Магазин Mishka</title>
   </head>
   <body>
     <header class="page-header">
@@ -38,28 +38,28 @@
       <section class="catalog">
         <ul class="catalog__list">
           <li class="catalog__item card">
-            <a class="card__link" href="#" aria-label="Переход на страницу с подробным описания товара Зайчик-попрыгайчик">
+            <a class="card__link" href="#" aria-label="Переход на страницу товара Зайчик-попрыгайчик">
               <img class="card__image" src="http://placehold.it/150x100" alt="Фотография Зайчика-попрыгайчика">
             </a>
-            <a class="card__title" href="#" aria-label="Переход на страницу с подробным описания товара Зайчик-попрыгайчик">Зайчик-попрыгайчик</a>
+            <a class="card__title" href="#" aria-label="Переход на страницу товара Зайчик-попрыгайчик">Зайчик-попрыгайчик</a>
             <p class="card__description">Рост 30 см, вес 200 г</p>
             <p class="card__price">1 200 руб.</p>
             <button class="card__button" type="button" aria-label="Добавить в корзину"></button>
           </li>
           <li class="catalog__item card">
-            <a class="card__link" href="#" aria-label="Переход на страницу с подробным описания товара Корзинка для белья">
+            <a class="card__link" href="#" aria-label="Переход на страницу товара Корзинка для белья">
               <img class="card__image" src="http://placehold.it/150x100" alt="фотография Корзины для белья">
             </a>
-            <a class="card__title" href="#" aria-label="Переход на страницу с подробным описания товара Корзинка для белья">Корзинка для белья</a>
+            <a class="card__title" href="#" aria-label="Переход на страницу товара Корзинка для белья">Корзинка для белья</a>
             <p class="card__description">Диаметр 15 см, высота 10 см</p>
             <p class="card__price">690 руб.</p>
             <button class="card__button" type="button" aria-label="Добавить в корзину"></button>
           </li>
           <li class="catalog__item card">
-            <a class="card__link" href="#" aria-label="Переход на страницу с подробным описания товара Большая корзина для игрушек">
+            <a class="card__link" href="#" aria-label="Переход на страницу товара Большая корзина для игрушек">
               <img class="card__image" src="http://placehold.it/150x100" alt="фотография Большой корзины для игрушек">
             </a>
-            <a class="card__title" href="#" aria-label="Переход на страницу с подробным описания товара Большая корзина для игрушек">Большая корзинка для игрушек</a>
+            <a class="card__title" href="#" aria-label="Переход на страницу товара Большая корзина для игрушек">Большая корзинка для игрушек</a>
             <p class="card__description">Диаметр 30 см, высота 30 см</p>
             <p class="card__price">1 500 руб.</p>
             <button class="card__button" type="button" aria-label="Добавить в корзину"></button>
@@ -86,25 +86,25 @@
         </a>
       </p>
     </footer>
-    <section class="modal-form">
-      <form class="modal modal--cart" method="POST" action="https://echo.htmlacademy.ru">
-        <h3 class="modal__title--cart">Добавить в корзину</h3>
-        <p class="modal__text--cart">Выберите размер:</p>
-        <ul class="modal__list--cart">
-          <li class="modal__item--cart">
-            <input class="modal__input--cart" type="radio" name="size" id="size-s" value="s">
-            <label class="modal__option--cart" for="size-s">s</label>
+    <section class="modal">
+      <form class="modal__form" method="POST" action="https://echo.htmlacademy.ru">
+        <h3 class="modal__title">Добавить в корзину</h3>
+        <p class="modal__text">Выберите размер:</p>
+        <ul class="modal__list">
+          <li class="modal__item">
+            <input class="modal__input" type="radio" name="size" id="size-s" value="s">
+            <label class="modal__option" for="size-s">s</label>
           </li>
-          <li class="modal__item--cart">
-            <input class="modal__input--cart" type="radio" name="size" id="size-m" value="m">
-            <label class="modal__option--cart" for="size-m">m</label>
+          <li class="modal__item">
+            <input class="modal__input" type="radio" name="size" id="size-m" value="m">
+            <label class="modal__option" for="size-m">m</label>
           </li>
-          <li class="modal__item--cart">
-            <input class="modal__input--cart" type="radio" name="size" id="size-l" value="l">
-            <label class="modal__option--cart" for="size-l">l</label>
+          <li class="modal__item">
+            <input class="modal__input" type="radio" name="size" id="size-l" value="l">
+            <label class="modal__option" for="size-l">l</label>
           </li>
         </ul>
-        <button class="button modal__button-card" type="submit">Добавить</button>
+        <button class="button modal__button" type="submit">Добавить</button>
       </form>
     </section>
   </body>
