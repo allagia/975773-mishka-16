@@ -6,12 +6,12 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header container">
       <a class="page-header__logo" href="index.html" aria-label="Переход на главную страницу сайта Мишка">
         <img class="page-header__logo-image" src="img/logo-mobile.svg" width="86" height="35" alt="логотип Мишка">
       </a>
+      <button class="page-header__toggle" aria-label="Открыть навигацию"></button>
       <nav class="main-nav">
-        <button class="main-nav__toggle" aria-label="Открыть навигацию"></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
@@ -23,17 +23,17 @@
           </ul>
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a class="site-list__link" href="#">Поиск по сайту</a>
+              <a class="site-list__link site-list__link--search" href="#">Поиск по сайту</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link" href="#">Корзина</a>
+              <a class="site-list__link site-list__link--cart" href="#">Корзина<span>: пока пуста</span></a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
     <main></main>
-    <footer class="page-footer">
+    <footer class="page-footer container">
       <ul class="social__list">
         <li class="social__item">
           <a class="social__link social__link--instagram" href="#" aria-label="Переход на страницу Мишки в инстаграме"></a>
@@ -45,10 +45,10 @@
           <a class="social__link social__link--twitter" href="#" aria-label="Переход на страницу Мишки в твитере"></a>
         </li>
       </ul>
-      <p class="page-footer__copyright copyright">
-        <span class="copyright__text">Разработано</b>
+      <p class="copyright">
+        <span class="copyright__text">Разработано</span>
         <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Переход на страницу разработчика HTML Academy">
-          <img class="copyright__logo-image" src="http://placehold.it/150x100" alt="иконка HTML Academy">
+          <img class="copyright__logo-image" src="img/logo-htmlacademy.svg" width="27" height="34" alt="иконка HTML Academy">
         </a>
       </p>
     </footer>
