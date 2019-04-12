@@ -29,6 +29,9 @@
 
 .intro__button {
   display: block;
+
+  width: 177px;
+
   font-weight: bold;
   font-size: 19px;
   line-height: 24px;
@@ -36,19 +39,21 @@
 }
 
 .intro__item {
+  display: flex;
+  justify-content: space-between;
+
   padding: 38px 29px;
 
   &--light {
     background-color: @tiffani-light;
-    background-image: url("../img/interior-svg-0.5.svg");
-    background-repeat: no-repeat;
-    background-position: 244px 23px;
   }
 
   &--dark {
     background-color: @tiffani-dark;
-    background-image: url("../img/icon-toy-0.5.svg");
-    background-repeat: no-repeat;
-    background-position: 244px 23px;
   }
+}
+
+.intro__image {
+  fill: #149080;
+  opacity: 0.5;
 }

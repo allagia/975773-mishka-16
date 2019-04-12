@@ -10,6 +10,8 @@
 .site-list__item {
   position: relative;
 
+  display: flex;
+
   padding: 22px 75px 22px 63px;
 
   border-bottom: 1px solid #ececec;
@@ -17,6 +19,14 @@
   &:first-child {
     border-top: 1px solid #ececec; /*подумать, как убрать задвоение границ*/
   }
+}
+
+.site-list__image {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+
+  opacity: 0.2;
 }
 
 .site-list__link {
@@ -34,35 +44,5 @@
 
   &:active {
     color: rgba(0, 0, 0, 0.3);
-  }
-
-  &--search {
-    &::before {
-      content: "";
-      position: absolute;
-      left: 32px;
-      top: 25px;
-
-      width: 18px;
-      height: 18px;
-
-      background-image: url("../img/icon-search-0.2.svg");
-      background-repeat: no-repeat;
-    }
-  }
-
-  &--cart {
-    &::before {
-      content: "";
-      position: absolute;
-      left: 30px;
-      top: 25px;
-
-      width: 18px;
-      height: 18px;
-
-      background-image: url("../img/icon-cart-0.2.svg");
-      background-repeat: no-repeat;
-    }
   }
 }

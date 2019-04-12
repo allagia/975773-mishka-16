@@ -35,6 +35,8 @@
     display: flex;
 
     margin-bottom: 31px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -64,6 +66,24 @@
 
     &:active {
       border-color: #62d1ba;
+    }
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .modal-form {
+    width: 566px;
+  }
+
+  .modal {
+    &--cart {
+      padding: 36px 108px 46px 108px;
+    }
+  }
+
+  .modal__list {
+    &--cart {
+      padding-left: 44px;
     }
   }
 }
