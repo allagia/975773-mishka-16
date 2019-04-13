@@ -1,0 +1,48 @@
+.main-nav {
+  text-align: left;
+  background-color: #ffffff;
+}
+
+.site-list {
+  .reset-list;
+}
+
+.site-list__item {
+  position: relative;
+
+  display: flex;
+
+  padding: 22px 75px 22px 63px;
+
+  border-bottom: 1px solid #ececec;
+
+  &:first-child {
+    border-top: 1px solid #ececec; /*подумать, как убрать задвоение границ*/
+  }
+}
+
+.site-list__image {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+
+  opacity: 0.2;
+}
+
+.site-list__link {
+  display: block;
+
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 24px;
+  text-decoration: none;
+  color: #000000;
+
+  &:hover {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
+}
