@@ -5,3 +5,30 @@
 
   background-color: #f1f1f1;
 }
+
+.logo-footer {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 51px 50px 58px 50px;
+  }
+
+  .logo-footer {
+    display: block;
+    margin: 0;
+  }
+
+  .social__list {
+    padding-bottom: 0;
+  }
+
+  .copyright {
+    padding: 0;
+  }
+}
