@@ -30,9 +30,11 @@
 }
 
 .intro__button {
-  display: block;
+  display: flex;
+  justify-content: space-between;
 
-  width: 177px;
+  width: 320px;
+  padding: 23px 27px 18px 29px;
 
   font-weight: bold;
   font-size: 19px;
@@ -41,11 +43,7 @@
 }
 
 .intro__item {
-  display: flex;
-  justify-content: space-between;
-
   width: 320px;
-  padding: 38px 29px;
 
   &--light {
     background-color: @tiffani-light;
@@ -63,6 +61,8 @@
 
 @media (min-width: @tablet-width) {
   .intro {
+    position: relative;
+
     width: 772px;
   }
 
@@ -73,7 +73,6 @@
 
   .intro__list {
     display: flex;
-    margin: 0 auto;
     padding: 0 52px;
   }
 
@@ -84,8 +83,28 @@
   .intro__header {
     width: 772px;
     height: 746px;
-    margin-bottom: -138px;
+    margin-bottom: -146px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+
+      width: 772px;
+      height: 24px;
+
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-size: contain;
+    }
 
     background-image: url("../img/hero-tablet@1x.jpg");
+  }
+
+  .intro__button {
+    font-size: 20px;
+    line-height: 30px;
+
+    padding: 35px 34px 48px 36px;
   }
 }
