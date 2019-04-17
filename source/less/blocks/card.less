@@ -59,11 +59,6 @@
     margin: 0 auto 54px auto;
   }
 
-  .catalog__list {
-    display: flex;
-    flex-direction: column;
-  }
-
   .card__info {
     width: 335px;
     margin: 0;
@@ -81,5 +76,15 @@
 
   .card__price {
     font-size: 17px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .card__description {
+    margin-bottom: 45px;
+
+    &--toys {
+      margin-bottom: 19px;
+    }
   }
 }

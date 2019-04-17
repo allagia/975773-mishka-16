@@ -10,4 +10,21 @@
   .catalog__item {
     display: flex;
   }
+
+  .catalog__list {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .catalog__list {
+    flex-direction: row;
+
+    width: @desktop-width;
+  }
+
+  .catalog__item {
+    flex-direction: column;
+  }
 }

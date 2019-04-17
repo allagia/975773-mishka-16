@@ -16,7 +16,7 @@
 
     background-image: url("../img/bg-zigzag-line.svg");
     background-size: contain;
-    background-repeat: no-repeat;
+    background-repeat: round;
   }
 }
 
@@ -79,15 +79,15 @@
 }
 
 @media (min-width: @tablet-width) {
-  .container {
-    width: @tablet-width;
-  }
+  // .container {
+  //   width: @tablet-width;
+  // }
 
   .promo {
     padding: 43px 52px;
 
     &::after {
-      width: 771px;
+      width: @tablet-width;
       height: 15px;
     }
   }
@@ -131,5 +131,32 @@
 
   .button {
     width: 292px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .promo__name {
+    order: 2;
+
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .promo__status {
+    margin-right: 40px;
+  }
+
+  .promo__layout2 {
+    margin-left: 140px;
+  }
+
+  .promo__layout3 {
+    margin-left: 140px;
+  }
+
+  .promo {
+    &::after {
+      width: @desktop-width;
+    }
   }
 }
