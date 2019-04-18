@@ -1,11 +1,23 @@
 .promo {
+  position: relative;
+
   padding: 34px 30px;
 
   color: #444444;
 
-  background-image: url("../img/bg-zigzag-line.svg");
-  background-repeat: repeat-x;
-  background-position: bottom;
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    width: 319px;
+    height: 6px;
+
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-size: contain;
+    background-repeat: round;
+  }
 }
 
 .promo__name {
@@ -64,4 +76,87 @@
   font-size: 17px;
   line-height: 24px;
   text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  // .container {
+  //   width: @tablet-width;
+  // }
+
+  .promo {
+    padding: 43px 52px;
+
+    &::after {
+      width: @tablet-width;
+      height: 15px;
+    }
+  }
+
+  .promo__price {
+    font-size: 20px;
+    text-align: left;
+
+    padding-left: 73px;
+  }
+
+  .promo__name {
+    font-size: 43px;
+    line-height: 50px;
+
+    margin-right: auto;
+    margin-bottom: 55px;
+  }
+
+  .promo__layout1 {
+    display: flex;
+  }
+
+  .promo__layout2 {
+    display: flex;
+  }
+
+  .promo__description {
+    width: 282px;
+    margin: 0 54px 54px 0;
+
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  .promo__status {
+    width: 97px;
+
+    line-height: 17px;
+  }
+
+  .button {
+    width: 292px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .promo__name {
+    order: 2;
+
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .promo__status {
+    margin-right: 40px;
+  }
+
+  .promo__layout2 {
+    margin-left: 140px;
+  }
+
+  .promo__layout3 {
+    margin-left: 140px;
+  }
+
+  .promo {
+    &::after {
+      width: @desktop-width;
+    }
+  }
 }
