@@ -102,6 +102,9 @@
 
 @media (min-width: @tablet-width) {
   .advantages__title {
+    padding: 14px 45px;
+    margin-bottom: 32px;
+
     font-size: 43px;
     line-height: 50px;
   }
@@ -114,31 +117,69 @@
   }
 
   .advantages__item {
+    width: 355px;
+
     font-size: 20px;
     line-height: 22px;
 
     &--flower {
       order: 1;
+
+      padding: 56px 30px 27px 51px;
+
+      &::before {
+        left: 59px;
+      }
     }
 
     &--money {
       order: 3;
+
+      padding: 56px 30px 27px 51px;
+
+      &::before {
+        left: 51px;
+      }
     }
 
     &--heart {
       order: 5;
+
+      padding: 56px 30px 27px 51px;
+
+      &::before {
+        left: 59px;
+      }
     }
 
     &--ball {
       order: 2;
+
+      padding: 57px 30px 55px 30px;
+
+      &::before {
+        left: 32px;
+      }
     }
 
     &--rocket {
       order: 4;
+
+      padding: 57px 30px 55px 30px;
+
+      &::before {
+        left: 23px;
+      }
     }
 
     &--gift {
       order: 6;
+
+      padding: 57px 30px 55px 30px;
+
+      &::before {
+        left: 32px;
+      }
     }
   }
 }
@@ -146,6 +187,39 @@
 
 @media (min-width: @desktop-width) {
   .advantages {
-    margin-left: 375px;
+    padding-left: 176px;
+  }
+
+  .advantages__title {
+    margin-bottom: 35px;
+
+    font-size: 53px;
+    line-height: 57px;
+  }
+
+  .advantages__item {
+    &--ball {
+      padding: 57px 30px 55px 46px;
+
+      &::before {
+        left: 48px;
+      }
+    }
+
+    &--rocket {
+      padding: 57px 13px 55px 44px;
+
+      &::before {
+        left: 38px;
+      }
+    }
+
+    &--gift {
+      padding: 57px 30px 55px 45px;
+
+      &::before {
+        left: 48px;
+      }
+    }
   }
 }

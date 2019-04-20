@@ -63,7 +63,11 @@
   }
 
   .card__info {
+    display: flex;
+    flex-direction: column;
+
     width: 335px;
+    height: 334px;
     margin: 0;
   }
 
@@ -74,20 +78,47 @@
   .card__description {
     font-size: 15px;
 
-    margin-bottom: 182px;
+    margin-bottom: auto;
   }
 
   .card__price {
     font-size: 17px;
   }
+
+  .card__link {
+    width: 334px;
+    height: 334px;
+  }
+
+  .card__bottom {
+    padding: 22px 5px 0 5px;
+  }
 }
 
 @media (min-width: @desktop-width) {
-  .card__description {
-    margin-bottom: 45px;
+  .card {
+    margin: 0 2px 54px 49px;
+  }
 
-    &--toys {
-      margin-bottom: 19px;
-    }
+  .card__description {
+    // margin-bottom: 45px;
+
+    // &--toys {
+    //   margin-bottom: 19px;
+    // }
+  }
+
+  .card__link {
+    width: 316px;
+    height: 462px;
+  }
+
+  .card__info {
+    width: 316px;
+    height: 197px;
+  }
+
+  .card__bottom {
+    padding: 22px 5px 0 0;
   }
 }
