@@ -9,6 +9,11 @@
   .reset-list;
 }
 
+.intro__image {
+  fill: #149080;
+  opacity: 0.5;
+}
+
 .intro__header {
   margin-bottom: -70px;
 
@@ -51,6 +56,30 @@
     & a {
       padding: 23px 35px 18px 30px;
     }
+
+    &:hover {
+      background-color: #59d5bc;
+
+      .intro__image {
+        opacity: 0.7;
+      }
+
+      a {
+        padding: 23px 35px 23px 30px;
+      }
+    }
+
+    &:active {
+      background-color: #59d5bc;
+
+      a {
+        color: rgba(255, 255, 255, 0.3);
+      }
+
+      .intro__image {
+        opacity: 0.3;
+      }
+    }
   }
 
   &--dark {
@@ -59,13 +88,34 @@
     & a {
       padding: 23px 27px 19px 29px;
     }
+
+    &:hover {
+      background-color: #46c1ae;
+
+      .intro__image {
+        opacity: 0.7;
+      }
+
+      a {
+        padding: 23px 27px 24px 29px;
+      }
+    }
+
+    &:active {
+      background-color: #46c1ae;
+
+      a {
+        color: rgba(255, 255, 255, 0.3);
+      }
+
+      .intro__image {
+        opacity: 0.3;
+      }
+    }
   }
 }
 
-.intro__image {
-  fill: #149080;
-  opacity: 0.5;
-}
+
 
 @media (min-width: @tablet-width) {
   .intro__title {
@@ -87,6 +137,14 @@
 
     &--dark a {
       padding: 28px 20px 30px 36px;
+    }
+
+    &--light:hover a {
+      padding: 27px 23px 45px 35px;
+    }
+
+    &--dark:hover a {
+      padding: 28px 20px 35px 36px;
     }
   }
 
@@ -135,6 +193,14 @@
     &--dark a {
       padding: 28px 35px 46px 35px;
     }
+
+    &--light:hover a {
+      padding: 27px 35px 51px 35px;
+    }
+
+    &--dark:hover a {
+      padding: 28px 35px 51px 35px;
+    }
   }
 
   .intro__header {
@@ -145,6 +211,7 @@
 
     &::after {
       height: 34px;
+
       background-size: cover;
     }
   }
@@ -152,4 +219,6 @@
   .intro__button {
     width: 525px;
   }
+
+
 }

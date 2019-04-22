@@ -10,7 +10,18 @@
 .page-header__logo {
   display: block;
   width: 86px;
-  margin: 21px auto;
+  margin: 20px auto;
+}
+
+.page-header__logo-image {
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .page-header__toggle {
@@ -77,4 +88,8 @@
   .page-header__logo-image {
     width: 148px;
   }
+}
+
+@media (max-width: @mobile-width-only) {
+
 }
