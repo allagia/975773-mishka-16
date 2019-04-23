@@ -1,26 +1,37 @@
-.copyright {
-  display: flex;
-
-  padding-left: 39px;
-  padding-top: 21px;
-  margin: 0;
-}
-
 .copyright__text {
   display: block;
 
   font-weight: bold;
   font-size: 19px;
   line-height: 18px;
+  color: #000000;
+
   margin-right: 29px;
   padding-top: 5px;
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
 }
 
 .copyright__logo {
-  display: block;
+  display: flex;
 
-  width: 27px;
-  height: 34px;
+  padding-left: 39px;
+  padding-top: 21px;
+  margin: 0;
+
+  &:hover {
+    path {
+      fill: #46c1ae;
+    }
+  }
+
+  &:active {
+    path {
+      opacity: 0.3;
+    }
+  }
 }
 
 .copyright__logo-image {

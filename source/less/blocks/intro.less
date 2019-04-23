@@ -39,14 +39,17 @@
   display: flex;
   justify-content: space-between;
 
+  min-height: 103px;
+
   font-weight: bold;
   font-size: 19px;
   line-height: 24px;
   color: #ffffff;
 
-  transition: transform 1s;
+  transition: height 1s, transform 1s;
 
   &:hover {
+    min-height: 108px;
     transform: translateY(-5px);
 
     .intro__image {
@@ -171,7 +174,8 @@
     &::after {
       height: 37px;
 
-      background-position-x: -3px;
+      background-position-x: 11px;
+      background-size: cover;
     }
   }
 
