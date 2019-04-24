@@ -5,8 +5,8 @@
   align-items: center;
   flex-wrap: wrap;
 
-  width: 260px;
-  padding: 0 25px 27px 45px;
+  max-width: 260px;
+  padding: 4px 44px 25px 58px;
 
   border-bottom: 1px solid #ececec;
 }
@@ -38,6 +38,15 @@
 
 @media (min-width: @tablet-width) {
   .social__list {
+    padding: 18px 19px 0 95px;
+    margin: 0 25px 0 0;
+
     border-bottom: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .social__list {
+    margin: 0 215px 0 0;
   }
 }

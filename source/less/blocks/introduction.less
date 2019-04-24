@@ -6,7 +6,7 @@
 }
 
 .introduction__title {
-  padding: 76px 43px 74px 42px;
+  padding: 71px 43px 76px 42px;
   margin: 0;
 
   font-weight: bold;
@@ -17,6 +17,8 @@
 
 @media (min-width: @tablet-width) {
   .introduction {
+    margin-bottom: 65px;
+
     &::after {
       content: "";
       position: absolute;
@@ -36,12 +38,21 @@
     font-size: 43px;
     line-height: 50px;
 
-    padding-bottom: 78px;
+    padding: 96px 50px 93px 50px;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .introduction {
+    &::after {
+      height: 34px;
+      background-position: 21px;
+    }
+  }
+
   .introduction__title {
+    padding: 96px 50px 117px 50px;
+
     font-size: 53px;
     line-height: 57px;
   }
