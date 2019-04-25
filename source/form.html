@@ -53,7 +53,7 @@
       </nav>
     </header>
     <main>
-      <section class="introduction"> <!--можно присвоить такой же класс, как в каталоге?-->
+      <section class="introduction">
         <h1 class="introduction__title">Вязание на заказ</h1>
       </section>
       <section class="order container">
@@ -61,21 +61,21 @@
           <h2 class="visually-hidden">Заказ товара по индивидуальным параметрам</h2>
           <p class="order__intro">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
           <fieldset class="order__item type">
-            <legend class="order__topic">Тип</legend>
+            <legend class="order__title">Тип</legend>
             <p class="type__item">
-              <input class="" type="radio" name="type" id="accessory"><!--возможно потребуется класс-->
+              <input class="" type="radio" name="type" id="accessory" value="interior accessory"><!--возможно потребуется класс-->
               <label for=accessory class="type__option">Аксессуар для интерьера</label>
             </p>
             <p class="type__item">
-              <input type="radio" name="type" id="toy">
+              <input type="radio" name="type" id="toy" value="kids toy">
               <label for=toy class="type__option">Детская игрушка</label>
             </p>
           </fieldset>
           <fieldset class="order__item color">
-            <legend class="order__topic">Цвет</legend>
+            <legend class="order__title">Цвет</legend>
             <p class="color__item">
               <input type="checkbox" name="white" id="white-id">
-              <label class="color__option" for=white-id>Белый</label>
+              <label class="color__option" for="white-id">Белый</label>
             </p>
             <p class="color__item">
               <input type="checkbox" name="grey" id="grey-id">
@@ -99,7 +99,7 @@
             </p>
           </fieldset>
           <fieldset class="order__item name">
-            <legend class="order__topic">Фио</legend>
+            <legend class="order__title">Фио</legend>
             <p class="name__item">
               <label class="name__part" for="name-id">Имя:</label>
               <input class="name__input" type="text" name="name" id="name-id" placeholder="Введите ваше имя*">
@@ -114,26 +114,26 @@
             </p>
           </fieldset>
           <fieldset class="order__item phone">
-            <legend class="order__topic">Тел</legend>
+            <legend class="order__title">Тел</legend>
             <p class="phone__item">
               <input class="phone__input" type="text" name="phone" id="phone-id" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
               <label class="phone__image" for="phone_id" aria-label="Укажите свой номер телефона"></label>
             </p>
           </fieldset>
           <fieldset class="order__item mail">
-            <legend class="order__topic">e-mail</legend>
+            <legend class="order__title">e-mail</legend>
             <p class="mail__item">
               <input class="mail__input" type="text" name="mail" id="mail-id" placeholder="Ваш Email*">
               <label class="mail__image" for="mail_id" aria-label="Укажите электронную почту"></label>
             </p>
           </fieldset>
           <fieldset class="order__item wishes">
-            <legend class="order__topic">Доп</legend>
+            <legend class="order__title">Доп</legend>
               <input class="wishes__input" type="text" name="wishes" id="wishes-id" placeholder="Опишите все ваши пожелания к заказу">
           </fieldset>
           <div class="order__bottom">
             <p class="order__hint">*Поля обязательны для заполнения</p>
-            <a class="button button--transparant">Отправить заказ</a>
+            <a class="button button--transparent">Отправить заказ</a>
           </div>
         </form>
       </section>
