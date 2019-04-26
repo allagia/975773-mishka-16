@@ -60,76 +60,76 @@
         <form class="order__form" method="POST" action="https://echo.htmlacademy.ru">
           <h2 class="visually-hidden">Заказ товара по индивидуальным параметрам</h2>
           <p class="order__intro">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
-          <fieldset class="order__item type">
+          <fieldset class="order__list">
             <legend class="order__title">Тип</legend>
-            <p class="type__item">
-              <input class="" type="radio" name="type" id="accessory" value="interior accessory"><!--возможно потребуется класс-->
-              <label for=accessory class="type__option">Аксессуар для интерьера</label>
+            <p class="order__item">
+              <input class="order__input" type="radio" name="toy-type" id="accessory" value="interior accessory">
+              <label for=accessory class="order__option">Аксессуар для интерьера</label>
             </p>
-            <p class="type__item">
-              <input type="radio" name="type" id="toy" value="kids toy">
-              <label for=toy class="type__option">Детская игрушка</label>
+            <p class="order__item">
+              <input class="order__input" type="radio" name="toy-type" id="toy" value="kids toy">
+              <label for=toy class="order__option">Детская игрушка</label>
             </p>
           </fieldset>
-          <fieldset class="order__item color">
+          <fieldset class="order__list">
             <legend class="order__title">Цвет</legend>
-            <p class="color__item">
-              <input type="checkbox" name="white" id="white-id">
-              <label class="color__option" for="white-id">Белый</label>
+            <p class="order__item">
+              <input class="order__input" type="checkbox" name="white" id="white-id">
+              <label class="order__option" for="white-id">Белый</label>
             </p>
-            <p class="color__item">
-              <input type="checkbox" name="grey" id="grey-id">
-              <label class="color__option" for="grey-id">Серый</label>
+            <p class="order__item">
+              <input class="order__input" type="checkbox" name="grey" id="grey-id">
+              <label class="order__option" for="grey-id">Серый</label>
             </p>
-            <p class="color__item">
-              <input type="checkbox" name="tiffani" id="tiffani-id">
-              <label class="color__option" for="tiffani-id">«Тиффани»</label>
+            <p class="order__item">
+              <input class="order__input" type="checkbox" name="tiffani" id="tiffani-id">
+              <label class="order__option" for="tiffani-id">«Тиффани»</label>
             </p>
-            <p class="color__item">
-              <input type="checkbox" name="black" id="black-id">
-              <label class="color__option" for="black-id">Черный</label>
+            <p class="order__item">
+              <input class="order__input" type="checkbox" name="black" id="black-id">
+              <label class="order__option" for="black-id">Черный</label>
             </p>
-            <p class="color__item">
-              <input type="checkbox" name="pink" id="pink-id">
-              <label class="color__option" for="pink-id">Розовый</label>
+            <p class="order__item">
+              <input class="order__input" type="checkbox" name="pink" id="pink-id">
+              <label class="order__option" for="pink-id">Розовый</label>
             </p>
-            <p class="color__item">
-              <input type="checkbox" name="orange" id="orange-id">
-              <label class="color__option" for="orange-id">Оранжевый</label>
+            <p class="order__item">
+              <input class="order__input" type="checkbox" name="orange" id="orange-id">
+              <label class="order__option" for="orange-id">Оранжевый</label>
             </p>
           </fieldset>
-          <fieldset class="order__item name">
+          <fieldset class="order__list">
             <legend class="order__title">Фио</legend>
-            <p class="name__item">
-              <label class="name__part" for="name-id">Имя:</label>
-              <input class="name__input" type="text" name="name" id="name-id" placeholder="Введите ваше имя*">
+            <p class="order__item">
+              <label class="order__option" for="name-id">Имя:</label>
+              <input class="order__input" type="text" name="name" id="name-id" placeholder="Введите ваше имя*">
             </p>
-            <p class="name__item">
-              <label class="name__part" for="surname-id">Фамилия:</label>
-              <input class="name__input" type="text" name="surname" id="surname-id" placeholder="Укажите фамилию*">
+            <p class="order__item">
+              <label class="order__option" for="surname-id">Фамилия:</label>
+              <input class="order__input" type="text" name="surname" id="surname-id" placeholder="Укажите фамилию*">
             </p>
-            <p class="name__item">
-              <label class="name__part" for="patronymic-id">Отчество:</label>
-              <input class="name__input" type="text" name="patronymic" id="patronymic-id" placeholder="Отчество, если желаете">
+            <p class="order__item">
+              <label class="order__option" for="patronymic-id">Отчество:</label>
+              <input class="order__input" type="text" name="patronymic" id="patronymic-id" placeholder="Отчество, если желаете">
             </p>
           </fieldset>
-          <fieldset class="order__item phone">
+          <fieldset class="order__list">
             <legend class="order__title">Тел</legend>
-            <p class="phone__item">
-              <input class="phone__input" type="text" name="phone" id="phone-id" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
-              <label class="phone__image" for="phone_id" aria-label="Укажите свой номер телефона"></label>
+            <p class="order__item">
+              <input class="order__input" type="text" name="phone" id="phone-id" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+              <label class="order__option" for="phone_id" aria-label="Укажите свой номер телефона"></label>
             </p>
           </fieldset>
-          <fieldset class="order__item mail">
+          <fieldset class="order__list">
             <legend class="order__title">e-mail</legend>
-            <p class="mail__item">
-              <input class="mail__input" type="text" name="mail" id="mail-id" placeholder="Ваш Email*">
-              <label class="mail__image" for="mail_id" aria-label="Укажите электронную почту"></label>
+            <p class="order__item">
+              <input class="order__input" type="text" name="mail" id="mail-id" placeholder="Ваш Email*">
+              <label class="order__option" for="mail_id" aria-label="Укажите электронную почту"></label>
             </p>
           </fieldset>
-          <fieldset class="order__item wishes">
+          <fieldset class="order__list">
             <legend class="order__title">Доп</legend>
-              <input class="wishes__input" type="text" name="wishes" id="wishes-id" placeholder="Опишите все ваши пожелания к заказу">
+              <input class="order__input" type="text" name="wishes" id="wishes-id" placeholder="Опишите все ваши пожелания к заказу">
           </fieldset>
           <div class="order__bottom">
             <p class="order__hint">*Поля обязательны для заполнения</p>
