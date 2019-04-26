@@ -60,13 +60,15 @@
 
   opacity: 0.2;
 
-  &:hover path {
-    fill: @tiffani-light;
+  &:hover {
     opacity: 1;
+
+    path {
+      fill: @tiffani-light;
+    }
   }
 
-  &:active path {
-    fill: @tiffani-light;
+  &:active {
     opacity: 0.3;
   }
 }
@@ -86,14 +88,30 @@
 
   &:hover {
     color: rgba(0, 0, 0, 0.6);
+
+    .site-list__image {
+      opacity: 1;
+
+      & path {
+        fill: @tiffani-light;
+      }
+    }
   }
 
   &:active {
     color: rgba(0, 0, 0, 0.3);
+
+    .site-list__image {
+      opacity: 0.3;
+    }
   }
 }
 
 @media (min-width: @tablet-width) {
+  .main-nav__toggle {
+    display: none;
+  }
+
   .site-list {
     display: flex;
 
@@ -172,6 +190,10 @@
 @media (min-width: @desktop-width) {
   .container {
     width: @desktop-width;
+  }
+
+  .main-nav__toggle {
+    display: none;
   }
 
   .site-list {
