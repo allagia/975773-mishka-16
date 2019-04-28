@@ -7,8 +7,8 @@
 .main-nav__toggle {
   display: block;
   position: absolute;
-  top: 11px;
-  right: 31px;
+  top: 7px;
+  right: 29px;
 
   width: 20px;
   height: 20px;
@@ -21,6 +21,7 @@
 
 .main-nav--closed .main-nav__toggle {
   background-image: url("../img/icon-menu-open.svg");
+  background-position: center;
 }
 
 .main-nav--opened .main-nav__toggle {
@@ -55,22 +56,19 @@
 
 .site-list__image {
   position: absolute;
-  top: 28px;
-  left: 32px;
+  top: 5px;
+  left: -45px;
 
   opacity: 0.2;
 
-  &:hover {
-    opacity: 1;
+  // &:hover {
+  //   opacity: 1;
+  //   fill: @tiffani-light;
+  // }
 
-    path {
-      fill: @tiffani-light;
-    }
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
+  // &:active {
+  //   opacity: 0.3;
+  // }
 }
 
 .site-list__link {
@@ -82,21 +80,18 @@
   line-height: 24px;
   text-decoration: none;
   color: #000000;
+  fill: #231f20;
 
   &--add {
     display: none;
   }
 
+  //наведение и нажатие не работает
   &:hover {
     color: rgba(0, 0, 0, 0.6);
 
-    .site-list__image {
-      opacity: 1;
-
-      & path {
-        fill: @tiffani-light;
-      }
-    }
+    // opacity: 1;
+    // color: @tiffani-light;
   }
 
   &:active {
@@ -104,6 +99,7 @@
 
     .site-list__image {
       opacity: 0.3;
+      fill: @tiffani-light;
     }
   }
 }
@@ -173,7 +169,14 @@
 
   .site-list__link {
     &--search {
-      display: none;
+      span {
+        display: none;
+      }
+
+      .site-list__image {
+        top: 15px;
+        left: -38px;
+      }
     }
 
     &--add {
@@ -183,8 +186,8 @@
   }
 
   .site-list__image {
-    top: 36px;
-    left: 33px;
+    top: 5px;
+    left: -50px;
   }
 }
 
