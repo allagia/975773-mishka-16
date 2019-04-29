@@ -86,18 +86,18 @@
     display: none;
   }
 
-  //наведение и нажатие не работает
   &:hover {
     color: rgba(0, 0, 0, 0.6);
 
-    // opacity: 1;
-    // color: @tiffani-light;
+    svg {
+    opacity: 1;
+    color: @tiffani-light;
   }
 
   &:active {
     color: rgba(0, 0, 0, 0.3);
 
-    .site-list__image {
+    svg {
       opacity: 0.3;
       fill: @tiffani-light;
     }
