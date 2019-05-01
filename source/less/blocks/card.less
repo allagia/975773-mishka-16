@@ -26,6 +26,14 @@
   font-size: 17px;
   line-height: 24px;
   color: #000000;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .card__description {
@@ -56,14 +64,14 @@
   border: none;
 
   &:hover {
-    .card__cart path {
+    svg {
       fill: @tiffani-light;
       opacity: 1;
     }
   }
 
   &:active {
-    .card__cart path {
+    svg {
       fill: @tiffani-light;
       opacity: 0.3;
     }

@@ -1,0 +1,152 @@
+.video__title {
+  font-size: 17px;
+  line-height: 24px;
+
+  padding: 24px 15px 25px 90px;
+  margin: 0;
+
+  background-image: url("../img/icon-video.svg");
+  background-repeat: no-repeat;
+  background-position: 33px 30px;
+}
+
+.video__text {
+  font-size: 13px;
+  line-height: 24px;
+  color: #444444;
+
+  margin-bottom: 41px;
+}
+
+.video__link {
+  padding: 12px 24px 13px 24px;
+}
+
+.video {
+  width: 260px;
+  margin-bottom: 57px;
+
+  border: 1px solid #ececec;
+}
+
+.video__picture {
+  position: relative;
+
+  width: 260px;
+  height: 150px;
+}
+
+.video__info {
+  padding: 13px 33px 50px 33px;
+}
+
+.video__icon {
+  position: absolute;
+  left: 79px;
+  top: 36px;
+
+  width: 101px;
+  height: auto;
+
+  &:hover {
+    svg {
+      transform: scale(1.2);
+    }
+  }
+
+  &:active {
+    svg {
+      transform: scale(0.8);
+    }
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .video {
+    display: flex;
+    flex-direction: column;
+
+    width: 668px;
+    margin-bottom: 63px;
+  }
+
+  .video__picture {
+    order: 1;
+
+    width: 668px;
+    margin-bottom: 319px;
+  }
+
+  .video__icon {
+    left: 283px;
+    top: 189px;
+  }
+
+  .video__header {
+    order: 2;
+  }
+
+  .video__info {
+    order: 3;
+
+    padding: 13px 41px 62px 41px;
+  }
+
+  .video__title {
+    font-size: 20px;
+
+    padding: 24px 15px 4px 106px;
+
+    background-position: 42px 19px;
+  }
+
+  .video__text {
+    font-size: 15px;
+    line-height: 30px;
+
+    margin-bottom: 51px;
+  }
+
+  .video__link {
+    padding: 12px 220px 13px 220px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .video {
+    width: 1049px;
+    margin-top: 5px;
+    margin-bottom: 103px;
+  }
+
+  .video__header {
+    margin: -430px 35px 0 652px;
+  }
+
+  .video__info {
+    padding: 15px 41px 78px 758px;
+  }
+
+  .video__link {
+    padding: 12px 47px 14px 43px;
+  }
+
+  .video__text {
+    margin-bottom: 62px;
+  }
+
+  .video__picture {
+    width: 682px;
+  }
+
+  .video__title {
+    padding: 55px 15px 4px 106px;
+
+    background-position: 108px 1px;
+  }
+
+  .video__icon {
+    left: 290px;
+    top: 188px;
+  }
+}
