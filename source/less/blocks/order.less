@@ -1,6 +1,7 @@
 .order__form {
+  width: 320px;
+  margin: -8px auto 0 auto;
   padding: 0 30px 0 30px;
-  margin-top: -8px;
 }
 
 .order__intro {
@@ -69,22 +70,19 @@
   font-size: 17px;
   line-height: 18px;
   font-weight: bold;
+}
 
-  &--contact {
-    position: absolute;
-    right: 7px;
+.order__image {
+  position: absolute;
+
+  &--phone {
     top: 11px;
+    right: 8px;
+  }
 
-    opacity: 0.2;
-
-    // &:hover,
-    // &:active {
-    //   opacity: 1;
-
-    //   svg {
-    //     fill: #62d1ba;
-    //   }
-    // }
+  &--mail {
+    top: 11px;
+    right: 4px;
   }
 }
 
@@ -184,12 +182,9 @@
   &:active {
     border-bottom: 2px solid #62d1ba;
 
-    & + .order__option--contact {
+    & + .order__image {
       opacity: 1;
-
-      svg {
-        fill: #62d1ba;
-      }
+      fill: #62d1ba;
     }
   }
 
@@ -233,6 +228,7 @@
 
 @media (min-width: @tablet-width) {
   .order__form {
+    width: 100%;
     padding: 0;
   }
 
@@ -271,17 +267,17 @@
       padding: 27px 0 16px 283px;
 
       legend {
-        left: 115px;
+        left: 116px;
         top: 51px;
       }
     }
 
     &:nth-child(4) {
-      padding: 30px 0 34px 283px;
+      padding: 30px 0 34px 284px;
 
       legend {
         left: 116px;
-        top: 69px;
+        top: 68px;
       }
     }
 
@@ -290,7 +286,7 @@
 
       legend {
         left: 115px;
-        top: 67px;
+        top: 66px;
       }
     }
 
@@ -309,16 +305,16 @@
     }
 
     &:nth-child(6) {
-      padding: 63px 114px 0 281px;
+      padding: 63px 0 0 281px;
 
       legend {
-        left: 115px;
-        top: 67px;
+        left: 116px;
+        top: 66px;
       }
     }
 
     &:nth-child(7) {
-      padding: 24px 114px 36px 281px;
+      padding: 24px 0 36px 282px;
 
       legend {
         left: 116px;
@@ -327,11 +323,11 @@
     }
 
     &:nth-child(8) {
-      padding: 51px 64px 19px 283px;
+      padding: 51px 0 19px 282px;
 
       legend {
-        left: 115px;
         top: 68px;
+        left: 116px;
       }
     }
 
@@ -342,10 +338,21 @@
     }
   }
 
+  .order__image {
+    &--phone {
+      right: 25px;
+    }
+
+    &--mail {
+      right: 23px;
+    }
+  }
+
   .order__group {
     display: flex;
     flex-wrap: wrap;
 
+    max-width: 772px;
     padding: 14px 0 0 0;
   }
 
@@ -385,6 +392,10 @@
           width: 428px;
         }
       }
+    }
+
+    &--contact {
+      width: 501px;
     }
   }
 
@@ -436,40 +447,40 @@
 
 @media (min-width: @desktop-width) {
   .order__intro {
-    padding: 49px 409px 0 409px;
+    padding: 48px 278px 0 278px;
   }
 
   .order__list {
     &:nth-child(3) {
-      padding: 27px 0 16px 409px;
+      padding: 28px 0 16px 278px;
 
       legend {
-        left: 296px;
+        left: 165px;
       }
     }
 
     &:nth-child(4) {
-      padding: 30px 187px 30px 409px;
+      padding: 30px 0 30px 276px;
 
       legend {
-        left: 292px;
-        top: 67px;
+        left: 161px;
       }
     }
 
     &:nth-child(5) {
-      padding: 27px 200px 35px 376px;
+      padding: 27px 0 35px 245px;
 
       legend {
-        left: 293px;
+        left: 162px;
       }
     }
 
     &:nth-child(6) {
-      padding: 64px 392px 0 407px;
+      padding: 64px 0 0 276px;
 
       legend {
-        left: 294px;
+        left: 163px;
+        top: 68px;
       }
 
       input {
@@ -478,10 +489,11 @@
     }
 
     &:nth-child(7) {
-      padding: 25px 392px 36px 407px;
+      padding: 25px 0 36px 276px;
 
       legend {
-        left: 294px;
+        top: 30px;
+        left: 162px;
       }
 
       input {
@@ -490,16 +502,30 @@
     }
 
     &:nth-child(8) {
-      padding: 51px 64px 19px 407px;
+      padding: 51px 0 19px 276px;
 
       legend {
-        left: 294px;
+        left: 163px;
       }
 
       .order__input {
         width: 700px;
       }
     }
+  }
+
+  .order__image {
+    &--phone {
+      right: 8px;
+    }
+
+    &--mail {
+      right: 4px;
+    }
+  }
+
+  .order__group {
+    max-width: 1050px;
   }
 
   .order__item {
@@ -520,6 +546,10 @@
           width: 626px;
         }
       }
+    }
+
+    &--contact {
+      width: 700px;
     }
   }
 

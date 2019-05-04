@@ -27,6 +27,14 @@
   margin-bottom: 57px;
 
   border: 1px solid #ececec;
+
+  &:hover {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+  }
 }
 
 .video__picture {
@@ -48,6 +56,9 @@
   width: 101px;
   height: auto;
 
+  border: none;
+  background-color: transparent;
+
   &:hover {
     svg {
       transform: scale(1.2);
@@ -57,6 +68,7 @@
   &:active {
     svg {
       transform: scale(0.8);
+      opacity: 0.3;
     }
   }
 }
@@ -73,7 +85,7 @@
   .video__picture {
     order: 1;
 
-    width: 668px;
+    width: 667px;
     margin-bottom: 319px;
   }
 
