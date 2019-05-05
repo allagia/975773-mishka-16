@@ -1,7 +1,6 @@
 var navMain = document.querySelector(".main-nav");
 var navToggle = document.querySelector(".main-nav__toggle");
 var buttons = document.querySelectorAll(".modal__button");
-// var buttonCard = document.querySelector(".card__button");
 var popup = document.querySelector(".modal-form");
 
 
