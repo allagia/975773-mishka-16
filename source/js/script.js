@@ -16,6 +16,7 @@ navToggle.addEventListener("click", function() {
   }
 });
 
+buttons = [].slice.call(buttons);
 buttons.forEach(function(button) {
   button.addEventListener("click", function (evt) {
     evt.preventDefault();
