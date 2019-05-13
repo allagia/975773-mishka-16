@@ -4,6 +4,10 @@
     <meta charset="utf-8">
     <title>Каталог | Магазин Mishka</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="preload" href="fonts/opensans.woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensansbold.woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
     <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
@@ -203,24 +207,24 @@
         </div>
       </footer>
     <section class="modal-form modal-form--inner container">
-      <form class="modal modal--cart" method="POST" action="https://echo.htmlacademy.ru">
-        <h3 class="modal__title--cart">Добавить в корзину</h3>
-        <p class="modal__text--cart">Выберите размер:</p>
-        <ul class="modal__list--cart">
-          <li class="modal__item--cart">
-            <input class="modal__input--cart visually-hidden" type="radio" name="size" id="size-s" value="s">
-            <label class="modal__option--cart button" for="size-s">s</label>
+      <form class="modal modal--inner" method="POST" action="https://echo.htmlacademy.ru">
+        <h3 class="modal__title">Добавить в корзину</h3>
+        <p class="modal__text">Выберите размер:</p>
+        <ul class="modal__list">
+          <li class="modal__item">
+            <input class="modal__input visually-hidden" type="radio" name="size" id="size-s" value="s">
+            <label class="modal__option button" for="size-s">s</label>
           </li>
-          <li class="modal__item--cart">
-            <input class="modal__input--cart visually-hidden" type="radio" name="size" id="size-m" value="m">
-            <label class="modal__option--cart button" for="size-m">m</label>
+          <li class="modal__item">
+            <input class="modal__input visually-hidden" type="radio" name="size" id="size-m" value="m">
+            <label class="modal__option button" for="size-m">m</label>
           </li>
-          <li class="modal__item--cart">
-            <input class="modal__input--cart visually-hidden" type="radio" name="size" id="size-l" value="l">
-            <label class="modal__option--cart button" for="size-l">l</label>
+          <li class="modal__item">
+            <input class="modal__input visually-hidden" type="radio" name="size" id="size-l" value="l">
+            <label class="modal__option button" for="size-l">l</label>
           </li>
         </ul>
-        <button class="button button--tiffani" type="submit">Добавить</button>
+        <button class="button button--tiffani button--modal" type="submit">Добавить</button>
       </form>
     </section>
     <script src="js/script.js"></script>

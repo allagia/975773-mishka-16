@@ -29,7 +29,7 @@
 
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
     background-image: url("../img/hero-mobile@2x.jpg");
-    background-size: 575px auto;
+    background-size: 581px auto;
   }
 }
 
@@ -52,11 +52,14 @@
   line-height: 24px;
   color: #ffffff;
 
-  transition: height 1s, transform 1s;
+  transition: box-shadow 0.2s;
 
   &:hover {
-    min-height: 108px;
-    transform: translateY(-5px);
+    // min-height: 108px;
+    // transform: translateY(-5px);
+
+
+      margin-top: -5px;
 
     .intro__image {
       opacity: 0.7;
@@ -79,8 +82,13 @@
 
       background-color: @tiffani-light;
 
+      &:hover {
+        box-shadow: 0 -5px 0 0 #59d5bc;
+      }
+
       &:hover,
       &:active {
+
         background-color: #59d5bc;
       }
     }
@@ -91,6 +99,11 @@
       padding: 23px 27px 19px 29px;
 
       background-color: @tiffani-dark;
+
+      &:hover {
+
+        box-shadow: 0 -5px 0 0 #46c1ae;
+      }
 
       &:hover,
       &:active {
