@@ -9,6 +9,11 @@
     <link rel="preload" href="fonts/opensansbold.woff" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
     <link href="css/style.min.css" rel="stylesheet">
+    <script>
+      // Picture element HTML5 shiv
+      document.createElement( "picture" );
+    </script>
+    <script src="js/picturefill.js" async></script>
   </head>
   <body>
     <div style="display:none">
@@ -206,8 +211,8 @@
           </a>
         </div>
       </footer>
-    <section class="modal-form modal-form--inner container">
-      <form class="modal modal--inner" method="POST" action="https://echo.htmlacademy.ru">
+    <section class="modal modal--inner container">
+      <form class="modal__form modal__form--inner" method="POST" action="https://echo.htmlacademy.ru">
         <h3 class="modal__title">Добавить в корзину</h3>
         <p class="modal__text">Выберите размер:</p>
         <ul class="modal__list">
@@ -228,5 +233,7 @@
       </form>
     </section>
     <script src="js/script.min.js"></script>
+    <script src="js/svg4everybody.min.js"></script>
+    <script>svg4everybody(); // run it now or whenever you are ready</script>
   </body>
 </html>

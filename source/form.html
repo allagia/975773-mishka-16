@@ -9,6 +9,11 @@
     <link rel="preload" href="fonts/opensansbold.woff" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
     <link href="css/style.min.css" rel="stylesheet">
+    <script>
+      // Picture element HTML5 shiv
+      document.createElement( "picture" );
+    </script>
+    <script src="js/picturefill.js" async></script>
   </head>
   <body>
     <div style="display:none">
@@ -123,11 +128,11 @@
               <div class="order__group">
                 <p class="order__item order__item--person">
                   <label class="order__option" for="name-id">Имя:</label>
-                  <input class="order__input order__input--person" type="text" name="name" id="name-id" placeholder="Введите ваше имя*">
+                  <input class="order__input order__input--person" type="text" name="name" id="name-id" placeholder="Введите ваше имя*" required>
                 </p>
                 <p class="order__item order__item--person">
                   <label class="order__option" for="surname-id">Фамилия:</label>
-                  <input class="order__input order__input--person" type="text" name="surname" id="surname-id" placeholder="Укажите фамилию*">
+                  <input class="order__input order__input--person" type="text" name="surname" id="surname-id" placeholder="Укажите фамилию*" required>
                 </p>
                 <p class="order__item order__item--person">
                   <label class="order__option" for="patronymic-id">Отчество:</label>
@@ -140,7 +145,7 @@
             <div class="order__content order__content--phone container">
               <h2 class="order__title">Тел</h2>
               <p class="order__item order__item--contact">
-                <input class="order__input order__input--person order__input--phone" type="tel" name="phone" id="phone-id" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+                <input class="order__input order__input--person order__input--phone" type="tel" name="phone" id="phone-id" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
                 <svg class="order__image order__image--phone" width="24.829" height="24.333">
                   <use xlink:href="img/sprite.svg#icon-phone"></use>
                 </svg>
@@ -151,7 +156,7 @@
             <div class="order__content order__content--mail container">
             <h2 class="order__title">e-mail</h2>
             <p class="order__item order__item--contact">
-              <input class="order__input order__input--person order__input--mail" type="email" name="mail" id="mail-id" placeholder="Ваш Email*">
+              <input class="order__input order__input--person order__input--mail" type="email" name="mail" id="mail-id" placeholder="Ваш Email*" required>
               <svg class="order__image order__image--mail" width="32" height="32">
                 <use xlink:href="img/sprite.svg#icon-mail"></use>
               </svg>
@@ -210,5 +215,7 @@
         </div>
       </footer>
     <script src="js/script.min.js"></script>
+    <script src="js/svg4everybody.min.js"></script>
+    <script>svg4everybody(); // run it now or whenever you are ready</script>
   </body>
 </html>

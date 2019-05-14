@@ -107,6 +107,7 @@
 @media (min-width: @tablet-width) {
   .reviews {
     display: flex;
+    flex-wrap: wrap;
 
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
@@ -119,6 +120,7 @@
 
     &::after {
       bottom: 0;
+
       width: 768px;
       height: 15px;
       background-image: url("../img/bg-zigzag-line.svg");
@@ -148,6 +150,7 @@
   .reviews__action {
     position: absolute;
     right: 0;
+    top: 0;
     flex-direction: column;
   }
 
