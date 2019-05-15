@@ -4,7 +4,16 @@
     <meta charset="utf-8">
     <title>Магазин Mishka</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="preload" href="fonts/opensans.woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensansbold.woff" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin="anonymous">
     <link href="css/style.min.css" rel="stylesheet">
+    <script>
+      // Picture element HTML5 shiv
+      document.createElement( "picture" );
+    </script>
+    <script src="js/picturefill.js" async></script>
   </head>
   <body>
     <div style="display:none">
@@ -63,18 +72,18 @@
       <section class="intro">
         <div class="intro__content container">
           <header class="intro__header">
-            <h1 class="intro__title">Милые штуки ручной<br> работы для дома</h1>
+            <h1 class="intro__title container">Милые штуки ручной<br>работы для дома</h1>
           </header>
           <ul class="intro__list">
             <li class="intro__item intro__item--light">
-              <a class="intro__button" href="#">Предметы<br>интерьера
+              <a class="intro__button" href="#"><span>Предметы<br>интерьера</span>
                 <svg class="intro__image" width="40.219" height="62.411">
                   <use xlink:href="img/sprite.svg#icon-interior"></use>
                 </svg>
               </a>
             </li>
             <li class="intro__item intro__item--dark">
-              <a class="intro__button" href="#">Детские<br>игрушки
+              <a class="intro__button" href="#"><span>Детские<br>игрушки</span>
                 <svg class="intro__image" width="60" height="59.62">
                   <use xlink:href="img/sprite.svg#icon-toy"></use>
                 </svg>
@@ -84,13 +93,13 @@
         </div>
       </section>
       <section class="promo container">
-        <div class="promo__layout1">
+        <div class="promo__header">
           <h2 class="promo__name">Вязаные корзинки</h2>
           <span class="promo__status">Товар недели</span>
         </div>
-        <div class="promo__layout2">
+        <div class="promo__description">
           <div class="promo__info">
-            <p class="promo__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+            <p class="promo__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
             <table class="promo__feature-list">
               <tr>
                 <td class="promo__feature">Цвет:</td>
@@ -117,7 +126,7 @@
             </picture>
           </div>
         </div>
-        <div class="promo__layout3">
+        <div class="promo__action">
           <span class="promo__price">Цена: 990 руб.</span>
           <a class="button button--transparent promo__link modal__button" href="add-to-cart.html">ЗАКАЗАТЬ</a>
         </div>
@@ -212,27 +221,29 @@
         </a>
       </div>
     </footer>
-    <section class="modal-form container">
-      <form class="modal modal--cart" method="POST" action="https://echo.htmlacademy.ru">
-        <h3 class="modal__title--cart">Добавить в корзину</h3>
-        <p class="modal__text--cart">Выберите размер:</p>
-        <ul class="modal__list--cart">
-          <li class="modal__item--cart">
-            <input class="modal__input--cart visually-hidden" type="radio" name="size" id="size-s" value="s">
-            <label class="modal__option--cart button" for="size-s">s</label>
+    <section class="modal container">
+      <form class="modal__form" method="POST" action="https://echo.htmlacademy.ru">
+        <h3 class="modal__title">Добавить в корзину</h3>
+        <p class="modal__text">Выберите размер:</p>
+        <ul class="modal__list">
+          <li class="modal__item">
+            <input class="modal__input visually-hidden" type="radio" name="size" id="size-s" value="s">
+            <label class="modal__option button" for="size-s">s</label>
           </li>
-          <li class="modal__item--cart">
-            <input class="modal__input--cart visually-hidden" type="radio" name="size" id="size-m" value="m">
-            <label class="modal__option--cart button" for="size-m">m</label>
+          <li class="modal__item">
+            <input class="modal__input visually-hidden" type="radio" name="size" id="size-m" value="m">
+            <label class="modal__option button" for="size-m">m</label>
           </li>
-          <li class="modal__item--cart">
-            <input class="modal__input--cart visually-hidden" type="radio" name="size" id="size-l" value="l">
-            <label class="modal__option--cart button" for="size-l">l</label>
+          <li class="modal__item">
+            <input class="modal__input visually-hidden" type="radio" name="size" id="size-l" value="l">
+            <label class="modal__option button" for="size-l">l</label>
           </li>
         </ul>
-        <button class="button button--tiffani" type="submit">Добавить</button>
+        <button class="button button--tiffani button--modal" type="submit">Добавить</button>
       </form>
     </section>
-    <script src="js/script.js"></script>
+    <script src="js/script.min.js"></script>
+    <script src="js/svg4everybody.min.js"></script>
+    <script>svg4everybody(); // run it now or whenever you are ready</script>
   </body>
 </html>
